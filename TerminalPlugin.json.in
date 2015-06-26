@@ -1,0 +1,12 @@
+{
+    \"Name\" : \"TerminalPlugin\",
+    \"Version\" : \"0.0.1\",
+    \"CompatVersion\" : \"0.0.1\",
+    \"Vendor\" : \"PetrVanek\",
+    \"Copyright\" : \"\",
+    \"License\" : \"LGPL\",
+    \"Description\" : \"provides terminal in qtcreator\",
+    \"Url\" : \"http://yarpen.cz\",
+    $$dependencyList
+}
+

@@ -1,0 +1,19 @@
+#ifndef TERMINALPLUGIN_GLOBAL_H
+#define TERMINALPLUGIN_GLOBAL_H
+
+#include <QtGlobal>
+
+#if defined(TERMINALPLUGIN_LIBRARY)
+#  define TERMINALPLUGINSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define TERMINALPLUGINSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#ifdef Q_OS_OSX
+#  define TERMINALPLUGINDEFAULTFONT QLatin1String("Monaco")
+#else
+#  define TERMINALPLUGINDEFAULTFONT QLatin1String("Monospace")
+#endif
+
+#endif // TERMINALPLUGIN_GLOBAL_H
+
