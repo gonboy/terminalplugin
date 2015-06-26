@@ -56,3 +56,6 @@ FORMS += \
 RESOURCES += \
     terminalplugin.qrc
 
+DISTFILES += \
+    README.md
+
