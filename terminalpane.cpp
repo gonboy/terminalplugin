@@ -5,7 +5,7 @@
 #include <coreplugin/icore.h>
 #include <utils/fileutils.h>
 
-#include <qtermwidget5/qtermwidget.h>
+#include "consolewidget.h"
 
 #include <QCheckBox>
 #include <QFileInfo>
@@ -16,7 +16,7 @@ namespace Internal {
 
 TerminalPane::TerminalPane(QObject *parent) : Core::IOutputPane(parent)
 {
-    m_terminal = new QTermWidget();
+    m_terminal = new ConsoleWidget();
 
     m_followDocs = new QCheckBox(tr("Follow Documents Path"));
 

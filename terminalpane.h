@@ -6,12 +6,12 @@
 #include <coreplugin/ioutputpane.h>
 #include <coreplugin/editormanager/ieditor.h>
 
-class QTermWidget;
+
 class QCheckBox;
 
 namespace TerminalPlugin {
 namespace Internal {
-
+class ConsoleWidget;
 class TERMINALPLUGINSHARED_EXPORT TerminalPane : public Core::IOutputPane
 {
     Q_OBJECT
@@ -41,7 +41,7 @@ public slots:
     void applySettings();
 
 private:
-    QTermWidget *m_terminal;
+    ConsoleWidget *m_terminal;
     QCheckBox *m_followDocs;
 };
 
