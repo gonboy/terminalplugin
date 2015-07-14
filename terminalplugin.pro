@@ -38,7 +38,7 @@ isEmpty(IDE_BUILD_TREE):IDE_BUILD_TREE=/opt/qt-creator-build
 # USE_USER_DESTDIR = yes
 
 ###### If the plugin can be depended upon by other plugins, this code needs to be outsourced to
-###### <diname>_dependencies.pri, where <dirname> is the name of the directory containing the
+###### <dirname>_dependencies.pri, where <dirname> is the name of the directory containing the
 ###### plugin's sources.
 
 QTC_PLUGIN_NAME = TerminalPlugin
