@@ -1,4 +1,4 @@
-#include "consolewidget.h"
+#include "terminalwidget.h"
 #include <QDebug>
 #include <QMenu>
 #include <QClipboard>
@@ -6,7 +6,7 @@
 namespace TerminalPlugin {
 namespace Internal {
 
-ConsoleWidget::ConsoleWidget(QWidget* p):QTermWidget(p)
+TerminalWidget::TerminalWidget(QWidget* p):QTermWidget(p)
 {
   setContextMenuPolicy(Qt::CustomContextMenu);
   connect(this, SIGNAL(customContextMenuRequested(const QPoint&)),
@@ -27,7 +27,7 @@ ConsoleWidget::ConsoleWidget(QWidget* p):QTermWidget(p)
   addAction(paste_action);
 }
 
-void ConsoleWidget::customContextMenuCall(const QPoint& pos)
+void TerminalWidget::customContextMenuCall(const QPoint& pos)
 {
   QMenu menu;
   menu.addAction(m_actions[COPY]);

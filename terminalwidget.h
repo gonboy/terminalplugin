@@ -1,5 +1,5 @@
-#ifndef CONSOLEWIDGET_H
-#define CONSOLEWIDGET_H
+#ifndef TerminalWidget_H
+#define TerminalWidget_H
 #include <QKeyEvent>
 #include <qtermwidget5/qtermwidget.h>
 #include <QPoint>
@@ -7,7 +7,7 @@
 namespace TerminalPlugin {
 namespace Internal {
 
-class ConsoleWidget : public QTermWidget
+class TerminalWidget : public QTermWidget
 {
   Q_OBJECT
   enum MenuActions {
@@ -16,7 +16,7 @@ class ConsoleWidget : public QTermWidget
   };
 
 public:
-  ConsoleWidget(QWidget* p = 0);
+  TerminalWidget(QWidget* p = 0);
 public slots:
   void customContextMenuCall(const QPoint& pos);
 private:
@@ -25,4 +25,4 @@ private:
 } // namespace Internal
 } // namespace TerminalPlugin
 
-#endif // CONSOLEWIDGET_H
+#endif // TerminalWidget_H

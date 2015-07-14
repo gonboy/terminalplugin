@@ -11,7 +11,7 @@ class QCheckBox;
 
 namespace TerminalPlugin {
 namespace Internal {
-class ConsoleWidget;
+class TerminalWidget;
 class TERMINALPLUGINSHARED_EXPORT TerminalPane : public Core::IOutputPane
 {
     Q_OBJECT
@@ -41,7 +41,7 @@ public slots:
     void applySettings();
 
 private:
-    ConsoleWidget *m_terminal;
+    TerminalWidget *m_terminal;
     QCheckBox *m_followDocs;
 };
 

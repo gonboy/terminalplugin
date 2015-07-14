@@ -11,13 +11,13 @@ INCLUDEPATH += $$(QTERMWIDGET_INCLUDE_PATH)
 SOURCES += terminalpluginplugin.cpp \
     terminalpane.cpp \
     terminaloptionspage.cpp \
-    consolewidget.cpp
+    terminalwidget.cpp
 
 HEADERS += terminalpluginplugin.h \
         terminalplugin_global.h \
     terminalpane.h \
     terminaloptionspage.h \
-    consolewidget.h
+    terminalwidget.h
 
 # Qt Creator linking
 
