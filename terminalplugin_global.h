@@ -16,4 +16,3 @@
 #endif
 
 #endif // TERMINALPLUGIN_GLOBAL_H
-
